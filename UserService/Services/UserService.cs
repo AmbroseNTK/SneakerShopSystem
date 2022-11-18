@@ -3,10 +3,10 @@ using UserService;
 
 namespace UserService.Services
 {
-    public class GreeterService : Greeter.GreeterBase
+    public class UserService : User.UserBase
     {
-        private readonly ILogger<GreeterService> _logger;
-        public GreeterService(ILogger<GreeterService> logger)
+        private readonly ILogger<UserService> _logger;
+        public UserService(ILogger<UserService> logger)
         {
             _logger = logger;
         }
@@ -18,5 +18,6 @@ namespace UserService.Services
                 Message = "Hello " + request.Name
             });
         }
+
     }
 }

@@ -2,12 +2,15 @@ syntax = "proto3";
 
 option csharp_namespace = "UserService";
 
-package greet;
+package user;
 
 // The greeting service definition.
-service Greeter {
-  // Sends a greeting
+service User {
+	
+	
+  // Sends a greeting	
   rpc SayHello (HelloRequest) returns (HelloReply);
+  rpc AddUser(CreateUserRequest) 
 }
 
 // The request message containing the user's name.
@@ -18,4 +21,17 @@ message HelloRequest {
 // The response message containing the greetings.
 message HelloReply {
   string message = 1;
+}
+
+message CreateUserRequest {
+	string name = 1;
+	int32 id = 2;
+	string email = 3;
+	string hpassword = 4;
+	string role = 5;
+}
+
+
+message CreateUserReply {
+	repeat HelloReply  message = 1;
 }
