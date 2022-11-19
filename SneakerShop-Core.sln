@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway", "SneakerShop-Core
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService", "UserService\UserService.csproj", "{4D5E0035-E1A4-4E45-B74E-F2F8C2D27EE8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService", "AuthService\AuthService.csproj", "{764B6830-2D86-4B92-8FED-C4120D389782}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4D5E0035-E1A4-4E45-B74E-F2F8C2D27EE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D5E0035-E1A4-4E45-B74E-F2F8C2D27EE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D5E0035-E1A4-4E45-B74E-F2F8C2D27EE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{764B6830-2D86-4B92-8FED-C4120D389782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{764B6830-2D86-4B92-8FED-C4120D389782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{764B6830-2D86-4B92-8FED-C4120D389782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{764B6830-2D86-4B92-8FED-C4120D389782}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

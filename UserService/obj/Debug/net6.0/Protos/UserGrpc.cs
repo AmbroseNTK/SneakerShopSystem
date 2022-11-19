@@ -13,7 +13,7 @@ namespace UserService {
   /// </summary>
   public static partial class User
   {
-    static readonly string __ServiceName = "greet.User";
+    static readonly string __ServiceName = "user.User";
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
@@ -49,17 +49,17 @@ namespace UserService {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::UserService.HelloRequest> __Marshaller_greet_HelloRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UserService.HelloRequest.Parser));
+    static readonly grpc::Marshaller<global::UserService.CreateUserRequest> __Marshaller_user_CreateUserRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UserService.CreateUserRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::UserService.HelloReply> __Marshaller_greet_HelloReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UserService.HelloReply.Parser));
+    static readonly grpc::Marshaller<global::UserService.CreateUserReply> __Marshaller_user_CreateUserReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UserService.CreateUserReply.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::UserService.HelloRequest, global::UserService.HelloReply> __Method_SayHello = new grpc::Method<global::UserService.HelloRequest, global::UserService.HelloReply>(
+    static readonly grpc::Method<global::UserService.CreateUserRequest, global::UserService.CreateUserReply> __Method_AddUser = new grpc::Method<global::UserService.CreateUserRequest, global::UserService.CreateUserReply>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "SayHello",
-        __Marshaller_greet_HelloRequest,
-        __Marshaller_greet_HelloReply);
+        "AddUser",
+        __Marshaller_user_CreateUserRequest,
+        __Marshaller_user_CreateUserReply);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -71,14 +71,8 @@ namespace UserService {
     [grpc::BindServiceMethod(typeof(User), "BindService")]
     public abstract partial class UserBase
     {
-      /// <summary>
-      /// Sends a greeting
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::UserService.HelloReply> SayHello(global::UserService.HelloRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::UserService.CreateUserReply> AddUser(global::UserService.CreateUserRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -91,7 +85,7 @@ namespace UserService {
     public static grpc::ServerServiceDefinition BindService(UserBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_SayHello, serviceImpl.SayHello).Build();
+          .AddMethod(__Method_AddUser, serviceImpl.AddUser).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -101,7 +95,7 @@ namespace UserService {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, UserBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_SayHello, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UserService.HelloRequest, global::UserService.HelloReply>(serviceImpl.SayHello));
+      serviceBinder.AddMethod(__Method_AddUser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UserService.CreateUserRequest, global::UserService.CreateUserReply>(serviceImpl.AddUser));
     }
 
   }

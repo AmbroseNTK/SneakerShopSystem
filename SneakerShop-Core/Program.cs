@@ -1,7 +1,6 @@
 
 
 using Grpc.Net.Client;
-using UserService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,13 +11,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-using var channel = GrpcChannel.ForAddress("http://localhost:30000");
-var client = new Greeter.GreeterClient(channel);
-var reply = await client.SayHelloAsync(
-                  new HelloRequest { Name = "Fuck you" });
-Console.WriteLine("Greeting: " + reply.Message);
-Console.WriteLine("Press any key to exit...");
-Console.ReadKey();
+using var userChannel = GrpcChannel.ForAddress("http://localhost:30000");
+using var authChannel = GrpcChannel.ForAddress("http://localhost:30001");
+
+var userClient = new UserService.User.UserClient(userChannel);
+var authClient = new AuthService.Auth.AuthClient(authChannel);
+
+builder.Services.Add(ServiceDescriptor.Singleton(typeof(UserService.User.UserClient), userClient));
+
 
 var app = builder.Build();
 

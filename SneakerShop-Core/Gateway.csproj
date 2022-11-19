@@ -20,11 +20,22 @@
     </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.25.0" />
-	<Protobuf Include="..\UserService\Protos\greet.proto" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Protos\" />
+    <None Remove="Services\" />
+    <None Remove="Models\" />
   </ItemGroup>
-
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Protobuf Include="..\AuthService\Protos\auth.proto" GrpcServices="Client">
+      <Link>Protos\auth.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\UserService\Protos\user.proto" GrpcServices="Client">
+      <Link>Protos\user.proto</Link>
+    </Protobuf>
+  </ItemGroup>
 </Project>

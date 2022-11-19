@@ -11,11 +11,11 @@ namespace UserService.Services
             _logger = logger;
         }
 
-        public override Task<HelloReply> SayHello(HelloRequest request, ServerCallContext context)
+        public override Task<CreateUserReply> AddUser(CreateUserRequest request, ServerCallContext context)
         {
-            return Task.FromResult(new HelloReply
+            return Task.FromResult(new CreateUserReply
             {
-                Message = "Hello " + request.Name
+                Message = "Created"
             });
         }
 

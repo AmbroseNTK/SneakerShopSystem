@@ -2,17 +2,15 @@
   "profiles": {
     "UserService": {
       "commandName": "Project",
+      "applicationUrl": "http://localhost:30000;https://localhost:7171",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "dotnetRunMessages": true,
-      "applicationUrl": "http://localhost:30000;https://localhost:7171"
+      }
     },
     "Docker": {
       "commandName": "Docker",
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
-      "publishAllPorts": true,
-      "useSSL": true
+      "environmentVariables": {}
     }
   }
 }
