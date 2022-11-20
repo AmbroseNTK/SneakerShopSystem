@@ -26,6 +26,11 @@ namespace SneakerShop_Core.Controllers
             var result = await _userClient.AddUserAsync(createUserRequest);
             return result;
         }
+
+        [HttpGet("paginate")]
+        public  UserService.GetUserPaginateReply GetUserPaginate([FromQuery]long afterID,[FromQuery]int limit) { 
+            return _userClient.GetUserPaginate(new UserService.GetUserPaginateRequest { AfterID= afterID, Limit = limit });
+        }
     }
 }
 
