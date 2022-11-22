@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+using UserService.Models;
 using UserService.Services;
 
 var builder = WebApplication.CreateBuilder(args);

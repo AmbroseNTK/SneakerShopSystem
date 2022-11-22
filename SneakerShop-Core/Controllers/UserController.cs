@@ -26,6 +26,38 @@ namespace SneakerShop_Core.Controllers
             var result = await _userClient.AddUserAsync(createUserRequest);
             return result;
         }
+
+        [HttpGet("paginate")]
+        public async Task<UserService.GetUserPaginateReply> GetUserPaginate([FromQuery]long afterID,[FromQuery]int limit) 
+        { 
+            return await _userClient.GetUserPaginateAsync(new UserService.GetUserPaginateRequest { AfterID= afterID, Limit = limit });
+        }
+
+        [HttpGet("total")]
+        public async Task<UserService.GetNumOfUserReply> GetNumOfUser()
+        {
+            return await _userClient.GetNumOfUserAsync(new UserService.GetNumOfUserRequest { Message = ""});
+        }
+
+        [HttpGet("search")]
+        public async Task<UserService.GetUserByIdReply> GetUserById([FromQuery]long id)
+        {
+            return await _userClient.GetUserByIdAsync(new UserService.GetUserByIdRequest { Id = id});
+        }
+
+        [HttpPut("update")]
+        public async Task<UserService.UpdateUserReply> UpdateUser(UserService.UpdateUserRequest updateUserRequest)
+        {
+            var result = await _userClient.UpdateUserAsync(updateUserRequest);
+            return result;
+        }
+
+        [HttpDelete("delete")]
+        public async Task<UserService.DeleteUserReply> DeleteUser([FromQuery] long id)
+        {
+            var result = await _userClient.DeleteUserAsync(new UserService.DeleteUserRequest { Id = id });
+            return result;
+        }
     }
 }
 

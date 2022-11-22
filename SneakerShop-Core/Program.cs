@@ -18,6 +18,7 @@ var userClient = new UserService.User.UserClient(userChannel);
 var authClient = new AuthService.Auth.AuthClient(authChannel);
 
 builder.Services.Add(ServiceDescriptor.Singleton(typeof(UserService.User.UserClient), userClient));
+builder.Services.Add(ServiceDescriptor.Singleton(typeof(AuthService.Auth.AuthClient), authClient));
 
 
 var app = builder.Build();

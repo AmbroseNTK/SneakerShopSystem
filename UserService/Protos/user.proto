@@ -7,18 +7,65 @@ package user;
 // The greeting service definition.
 service User {
   rpc AddUser(CreateUserRequest) returns(CreateUserReply);
+  rpc GetNumOfUser(GetNumOfUserRequest) returns(GetNumOfUserReply);
+  rpc GetUserById(GetUserByIdRequest) returns(GetUserByIdReply);
+  rpc GetUserPaginate(GetUserPaginateRequest) returns(GetUserPaginateReply);
+  rpc UpdateUser(UpdateUserRequest) returns(UpdateUserReply);
+  rpc DeleteUser(DeleteUserRequest) returns(DeleteUserReply);
 }
 
+message UserData {
+	string name = 1;
+	int64 id = 2;
+	string role = 3;
+}
 
 message CreateUserRequest {
-	string name = 1;
-	int32 id = 2;
-	string email = 3;
-	string hpassword = 4;
-	string role = 5;
+	UserData data = 1;
 }
-
 
 message CreateUserReply {
 	string message = 1;
+}
+
+message GetNumOfUserRequest {
+	string message = 1;
+}
+
+message GetNumOfUserReply {
+	int64 total = 1;		
+}
+
+message GetUserByIdRequest {
+	int64 id = 1;
+}
+
+message GetUserByIdReply {
+	UserData data = 1;
+}
+
+message GetUserPaginateRequest {
+	int32 limit = 2;
+	int64 afterID = 1;
+}
+
+message GetUserPaginateReply {
+
+	repeated UserData userList = 1;
+}
+
+message UpdateUserRequest {
+	UserData data = 1;
+}
+
+message UpdateUserReply {
+	bool isSuccess = 1;
+}
+
+message DeleteUserRequest {
+	int64 id = 1;
+}
+
+message DeleteUserReply {
+	bool isSuccess = 1;
 }
