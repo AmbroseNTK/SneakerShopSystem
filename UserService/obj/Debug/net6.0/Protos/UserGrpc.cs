@@ -68,6 +68,10 @@ namespace UserService {
     static readonly grpc::Marshaller<global::UserService.UpdateUserRequest> __Marshaller_user_UpdateUserRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UserService.UpdateUserRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::UserService.UpdateUserReply> __Marshaller_user_UpdateUserReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UserService.UpdateUserReply.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::UserService.DeleteUserRequest> __Marshaller_user_DeleteUserRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UserService.DeleteUserRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::UserService.DeleteUserReply> __Marshaller_user_DeleteUserReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UserService.DeleteUserReply.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::UserService.CreateUserRequest, global::UserService.CreateUserReply> __Method_AddUser = new grpc::Method<global::UserService.CreateUserRequest, global::UserService.CreateUserReply>(
@@ -109,6 +113,14 @@ namespace UserService {
         __Marshaller_user_UpdateUserRequest,
         __Marshaller_user_UpdateUserReply);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::UserService.DeleteUserRequest, global::UserService.DeleteUserReply> __Method_DeleteUser = new grpc::Method<global::UserService.DeleteUserRequest, global::UserService.DeleteUserReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteUser",
+        __Marshaller_user_DeleteUserRequest,
+        __Marshaller_user_DeleteUserReply);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -149,6 +161,12 @@ namespace UserService {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::UserService.DeleteUserReply> DeleteUser(global::UserService.DeleteUserRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
@@ -161,7 +179,8 @@ namespace UserService {
           .AddMethod(__Method_GetNumOfUser, serviceImpl.GetNumOfUser)
           .AddMethod(__Method_GetUserById, serviceImpl.GetUserById)
           .AddMethod(__Method_GetUserPaginate, serviceImpl.GetUserPaginate)
-          .AddMethod(__Method_UpdateUser, serviceImpl.UpdateUser).Build();
+          .AddMethod(__Method_UpdateUser, serviceImpl.UpdateUser)
+          .AddMethod(__Method_DeleteUser, serviceImpl.DeleteUser).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -176,6 +195,7 @@ namespace UserService {
       serviceBinder.AddMethod(__Method_GetUserById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UserService.GetUserByIdRequest, global::UserService.GetUserByIdReply>(serviceImpl.GetUserById));
       serviceBinder.AddMethod(__Method_GetUserPaginate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UserService.GetUserPaginateRequest, global::UserService.GetUserPaginateReply>(serviceImpl.GetUserPaginate));
       serviceBinder.AddMethod(__Method_UpdateUser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UserService.UpdateUserRequest, global::UserService.UpdateUserReply>(serviceImpl.UpdateUser));
+      serviceBinder.AddMethod(__Method_DeleteUser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UserService.DeleteUserRequest, global::UserService.DeleteUserReply>(serviceImpl.DeleteUser));
     }
 
   }
