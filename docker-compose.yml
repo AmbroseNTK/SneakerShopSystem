@@ -6,3 +6,9 @@ services:
     build:
       context: .
       dockerfile: AuthService/Dockerfile
+  userservice:
+    image: ${DOCKER_REGISTRY-}userservice
+    build:
+      context: .
+      dockerfile: UserService/Dockerfile
+  

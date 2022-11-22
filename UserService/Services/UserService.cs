@@ -8,10 +8,10 @@ namespace UserService.Services
     {
         private readonly UserContext _context;
         private readonly ILogger<UserService> _logger;
-        public UserService(ILogger<UserService> logger)
+        public UserService(ILogger<UserService> logger, UserContext context)
         {
             _logger = logger;
-            _context = new UserContext();
+            _context = context;
         }
 
         public override Task<CreateUserReply> AddUser(CreateUserRequest request, ServerCallContext context)
@@ -40,7 +40,7 @@ namespace UserService.Services
                 result.UserList.Add(user);
             }
             return Task.FromResult(result);
-           
+
         }
 
         public override Task<GetNumOfUserReply> GetNumOfUser(GetNumOfUserRequest request, ServerCallContext context)
@@ -53,41 +53,39 @@ namespace UserService.Services
 
         public override Task<GetUserByIdReply> GetUserById(GetUserByIdRequest request, ServerCallContext context)
         {
-            _context.Users.Load();
             var user = (from u in _context.Users
                         where u.Id == request.Id
                         select new UserData { Id = u.Id, Name = u.Name, Role = u.Role }).SingleOrDefault();
+
             var result = new GetUserByIdReply { Data = user };
             return Task.FromResult(result);
         }
 
         public override Task<UpdateUserReply> UpdateUser(UpdateUserRequest request, ServerCallContext context)
         {
-            _context.Users.Load();
             var user = (from u in _context.Users
                         where u.Id == request.Data.Id
-                        select new Models.User { Id = u.Id, Name = u.Name, Role = u.Role }).SingleOrDefault();
-            if(user == null)
+                        select u).SingleOrDefault();
+
+            if (user == null)
             {
                 return Task.FromResult(new UpdateUserReply { IsSuccess = false });
             }
             else
             {
-                /*user.Id = request.Data.Id;*/
+
                 user.Name = request.Data.Name;
                 user.Role = request.Data.Role;
-                _context.Users.Update(user);
+                _context.SaveChanges();
             }
-            _context.SaveChanges();
-            return Task.FromResult(new UpdateUserReply { IsSuccess=true });
+            return Task.FromResult(new UpdateUserReply { IsSuccess = true });
         }
 
         public override Task<DeleteUserReply> DeleteUser(DeleteUserRequest request, ServerCallContext context)
         {
-            _context.Users.Load();
             var user = (from u in _context.Users
                         where u.Id == request.Id
-                        select new Models.User { Id = u.Id, Name = u.Name, Role = u.Role }).SingleOrDefault();
+                        select u).SingleOrDefault();
             if (user == null)
             {
                 return Task.FromResult(new DeleteUserReply { IsSuccess = false });
@@ -95,8 +93,8 @@ namespace UserService.Services
             else
             {
                 _context.Users.Remove(user);
+                _context.SaveChanges();
             }
-            _context.SaveChanges();
             return Task.FromResult(new DeleteUserReply { IsSuccess = true });
         }
 
