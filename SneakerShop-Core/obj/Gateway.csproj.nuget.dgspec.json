@@ -1,26 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ambrose/Projects/SneakerShopSystem/SneakerShop-Core/Gateway.csproj": {}
+    "D:\\Software-Archirtecture\\DoAnCK\\SneakerShopSystem\\SneakerShop-Core\\Gateway.csproj": {}
   },
   "projects": {
-    "/Users/ambrose/Projects/SneakerShopSystem/SneakerShop-Core/Gateway.csproj": {
+    "D:\\Software-Archirtecture\\DoAnCK\\SneakerShopSystem\\SneakerShop-Core\\Gateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ambrose/Projects/SneakerShopSystem/SneakerShop-Core/Gateway.csproj",
+        "projectUniqueName": "D:\\Software-Archirtecture\\DoAnCK\\SneakerShopSystem\\SneakerShop-Core\\Gateway.csproj",
         "projectName": "Gateway",
-        "projectPath": "/Users/ambrose/Projects/SneakerShopSystem/SneakerShop-Core/Gateway.csproj",
-        "packagesPath": "/Users/ambrose/.nuget/packages/",
-        "outputPath": "/Users/ambrose/Projects/SneakerShopSystem/SneakerShop-Core/obj/",
+        "projectPath": "D:\\Software-Archirtecture\\DoAnCK\\SneakerShopSystem\\SneakerShop-Core\\Gateway.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Software-Archirtecture\\DoAnCK\\SneakerShopSystem\\SneakerShop-Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/ambrose/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -103,7 +109,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

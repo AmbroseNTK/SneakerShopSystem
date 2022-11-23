@@ -27,9 +27,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Auth.db" />
     <None Remove="Services\" />
     <None Remove="Protos\auth.proto" />
     <None Remove="System.IdentityModel.Tokens.Jwt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Auth.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />

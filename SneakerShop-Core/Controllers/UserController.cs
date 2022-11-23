@@ -58,6 +58,7 @@ namespace SneakerShop_Core.Controllers
             var result = await _userClient.DeleteUserAsync(new UserService.DeleteUserRequest { Id = id });
             return result;
         }
+
     }
 }
 

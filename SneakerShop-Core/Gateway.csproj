@@ -38,6 +38,9 @@
     <Protobuf Include="..\AuthService\Protos\auth.proto" GrpcServices="Client">
       <Link>Protos\auth.proto</Link>
     </Protobuf>
+    <Protobuf Include="..\ProductService\Protos\product.proto" GrpcServices="Client">
+      <Link>Protos\product.proto</Link>
+    </Protobuf>
     <Protobuf Include="..\UserService\Protos\user.proto" GrpcServices="Client">
       <Link>Protos\user.proto</Link>
     </Protobuf>
