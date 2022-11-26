@@ -32,14 +32,19 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Protobuf Include="..\AuthService\Protos\auth.proto" GrpcServices="Client">
       <Link>Protos\auth.proto</Link>
     </Protobuf>
+    <Protobuf Include="..\OrderService\Protos\order.proto" GrpcServices="Client">
+      <Link>Protos\order.proto</Link>
+    </Protobuf>
     <Protobuf Include="..\ProductService\Protos\product.proto" GrpcServices="Client">
       <Link>Protos\product.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\StockService\Protos\stock.proto" GrpcServices="Client">
+      <Link>Protos\stock.proto</Link>
     </Protobuf>
     <Protobuf Include="..\UserService\Protos\user.proto" GrpcServices="Client">
       <Link>Protos\user.proto</Link>

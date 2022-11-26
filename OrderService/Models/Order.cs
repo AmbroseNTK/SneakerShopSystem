@@ -12,4 +12,6 @@ public partial class Order
     public byte[] CreatedAt { get; set; } = null!;
 
     public long UserId { get; set; }
+
+    public virtual ICollection<OrderDetail> OrderDetails { get; } = new List<OrderDetail>();
 }

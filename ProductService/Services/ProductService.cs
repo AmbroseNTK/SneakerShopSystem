@@ -119,7 +119,12 @@ namespace ProductService.Services
             return Task.FromResult(new DeleteProductReply { IsSuccess = true });
         }
 
-
-
+        public override Task<GetProductPriceReply> GetProductPrice(GetProductPriceRequest request, ServerCallContext context)
+        {
+            var price  = (from p in _context.Products
+                          where p.Id == request.Id
+                          select p.Price).SingleOrDefault();
+            return Task.FromResult(new GetProductPriceReply { Price = price });
+        }
     }
 }

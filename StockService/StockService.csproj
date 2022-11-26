@@ -11,7 +11,15 @@
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
   <ItemGroup>
-    <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
+    <None Remove="Stock.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Stock.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Protobuf Include="Protos\stock.proto" GrpcServices="Server" />
   </ItemGroup>
 
   <ItemGroup>

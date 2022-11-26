@@ -12,7 +12,7 @@ service Product {
   rpc GetProductPaginate(GetProductPaginateRequest) returns(GetProductPaginateReply);
   rpc UpdateProduct(UpdateProductRequest) returns(UpdateProductReply);
   rpc DeleteProduct(DeleteProductRequest) returns(DeleteProductReply);
-  
+  rpc GetProductPrice(GetProductPriceRequest) returns(GetProductPriceReply);
 }
 
 message ProductData{
@@ -72,6 +72,14 @@ message DeleteProductRequest {
 
 message DeleteProductReply {
 	bool isSuccess = 1;
+}
+
+message GetProductPriceRequest {
+	int64 id = 1;
+}
+
+message GetProductPriceReply {
+	double price = 1;
 }
 
 

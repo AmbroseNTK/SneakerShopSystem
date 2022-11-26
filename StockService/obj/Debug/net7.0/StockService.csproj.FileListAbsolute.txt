@@ -70,6 +70,7 @@
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\StockService\bin\Debug\net7.0\appsettings.Development.json
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\StockService\bin\Debug\net7.0\appsettings.json
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\StockService\bin\Debug\net7.0\StockService.exe
+D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\StockService\bin\Debug\net7.0\Stock.db
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\StockService\bin\Debug\net7.0\StockService.deps.json
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\StockService\bin\Debug\net7.0\StockService.runtimeconfig.json
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\StockService\bin\Debug\net7.0\StockService.dll

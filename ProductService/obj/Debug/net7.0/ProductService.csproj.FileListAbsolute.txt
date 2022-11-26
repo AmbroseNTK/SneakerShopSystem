@@ -70,6 +70,7 @@
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\ProductService\bin\Debug\net7.0\appsettings.Development.json
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\ProductService\bin\Debug\net7.0\appsettings.json
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\ProductService\bin\Debug\net7.0\ProductService.exe
+D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\ProductService\bin\Debug\net7.0\Product.db
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\ProductService\bin\Debug\net7.0\ProductService.deps.json
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\ProductService\bin\Debug\net7.0\ProductService.runtimeconfig.json
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\ProductService\bin\Debug\net7.0\ProductService.dll
@@ -136,4 +137,3 @@ D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\ProductService\obj\Debug\net7
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\ProductService\obj\Debug\net7.0\ProductService.pdb
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\ProductService\obj\Debug\net7.0\ProductService.genruntimeconfig.cache
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\ProductService\obj\Debug\net7.0\ref\ProductService.dll
-D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\ProductService\bin\Debug\net7.0\Product.db
