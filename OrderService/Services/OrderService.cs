@@ -21,28 +21,52 @@ namespace OrderService.Services
         public override Task<CreateOrderReply> AddOrder(CreateOrderRequest request, ServerCallContext context)
         {
             double total = 0;
-            foreach (var orderDetail in request.OrderDetailData)
+            var order = new Models.Order();
+            if(request.OrderDetailData.Count > 0)
             {
-                var prodPrice = _productClient.GetProductPrice(new ProductService.GetProductPriceRequest { Id = orderDetail.Id });
-                total = (orderDetail.Quantity * prodPrice.Price) + total;
-            }
-            var order = new Models.Order()
-            {
-                UserId = request.OrderData.UserID,
-                Total = total,
-                CreatedAt = BitConverter.GetBytes(Convert.ToInt32(DateTime.Now))
-            };
-       
-            foreach (var orderDetail in request.OrderDetailData)
-            {
-                order.OrderDetails.Add(new OrderDetail()
+                foreach (var orderDetail in request.OrderDetailData)
                 {
-                    OrderId = order.Id,
-                    ProdId = orderDetail.ProdID,
-                    Quantity = BitConverter.GetBytes(orderDetail.Quantity)
-                });
-            }
+                    var prodPrice = _productClient.GetProductPrice(new ProductService.GetProductPriceRequest { Id = orderDetail.ProdID });
+                    total = (orderDetail.Quantity * prodPrice.Price) + total;
+                }
 
+                order = new Models.Order()
+                {
+                    UserId = request.OrderData.UserID,
+                    Total = total,
+                    CreatedAt = DateTime.Now.ToString()
+                };
+
+                foreach (var orderDetail in request.OrderDetailData)
+                {
+                    order.OrderDetails.Add(new OrderDetail()
+                    {
+                        OrderId = order.Id,
+                        ProdId = orderDetail.ProdID,
+                        Quantity = BitConverter.GetBytes(orderDetail.Quantity)
+                    });
+                }
+            }
+            else
+            {
+                order = new Models.Order()
+                {
+                    UserId = request.OrderData.UserID,
+                    Total = total,
+                    CreatedAt = DateTime.Now.ToString()
+                };
+
+                foreach (var orderDetail in request.OrderDetailData)
+                {
+                    order.OrderDetails.Add(new OrderDetail()
+                    {
+                        OrderId = order.Id,
+                        ProdId = orderDetail.ProdID,
+                        Quantity = BitConverter.GetBytes(orderDetail.Quantity)
+                    });
+                }
+            }
+     
             _context.Orders.Add(order);
             _context.SaveChanges();
             return Task.FromResult(new CreateOrderReply
@@ -59,6 +83,9 @@ namespace OrderService.Services
                           select new OrderData
                           {
                               Id = order.Id,
+                              UserID = order.UserId,
+                              Total = order.Total,
+                              CreatedAt = order.CreatedAt
                           }).Take(request.Limit);
             var result = new GetOrderPaginateReply();
             foreach (var order in orders)
@@ -88,7 +115,7 @@ namespace OrderService.Services
                 _context.Entry(order).Collection(e => e.OrderDetails).Load();
                 var result = new GetOrderByIdReply { OrderData = new OrderData {
                     Id = order.Id,
-                    CreatedAt = BitConverter.ToInt32(order.CreatedAt,0),
+                    CreatedAt = order.CreatedAt,
                     UserID = order.UserId,
                     Total = order.Total
                 } };
@@ -108,16 +135,17 @@ namespace OrderService.Services
 
         public override Task<DeleteOrderReply> DeleteOrder(DeleteOrderRequest request, ServerCallContext context)
         {
-            var stock = (from s in _context.Orders
-                         where s.Id == request.Id
-                         select s).SingleOrDefault();
-            if (stock == null)
+            var order = (from o in _context.Orders
+                         where o.Id == request.Id
+                         select o).FirstOrDefault();
+            if (order == null)
             {
                 return Task.FromResult(new DeleteOrderReply { IsSuccess = false });
             }
             else
             {
-                _context.Orders.Remove(stock);
+                _context.Entry(order).Collection(e => e.OrderDetails).Load();
+                _context.Orders.Remove(order);
                 _context.SaveChanges();
             }
             return Task.FromResult(new DeleteOrderReply { IsSuccess = true });

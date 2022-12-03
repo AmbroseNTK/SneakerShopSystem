@@ -30,9 +30,7 @@ public partial class OrderContext : DbContext
             entity.ToTable("order");
 
             entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.CreatedAt)
-                .HasColumnType("NUMERIC")
-                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedAt).HasColumnName("created_at");
             entity.Property(e => e.Total).HasColumnName("total");
             entity.Property(e => e.UserId).HasColumnName("userID");
         });
@@ -50,7 +48,7 @@ public partial class OrderContext : DbContext
 
             entity.HasOne(d => d.Order).WithMany(p => p.OrderDetails)
                 .HasForeignKey(d => d.OrderId)
-                .OnDelete(DeleteBehavior.ClientSetNull);
+                .OnDelete(DeleteBehavior.Cascade);
         });
 
         OnModelCreatingPartial(modelBuilder);

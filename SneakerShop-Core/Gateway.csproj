@@ -37,11 +37,17 @@
     <Protobuf Include="..\AuthService\Protos\auth.proto" GrpcServices="Client">
       <Link>Protos\auth.proto</Link>
     </Protobuf>
+    <Protobuf Include="..\InvoiceService\Protos\invoice.proto" GrpcServices="Client">
+      <Link>Protos\invoice.proto</Link>
+    </Protobuf>
     <Protobuf Include="..\OrderService\Protos\order.proto" GrpcServices="Client">
       <Link>Protos\order.proto</Link>
     </Protobuf>
     <Protobuf Include="..\ProductService\Protos\product.proto" GrpcServices="Client">
       <Link>Protos\product.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\ShippingService\Protos\shipping.proto" GrpcServices="Client">
+      <Link>Protos\shipping.proto</Link>
     </Protobuf>
     <Protobuf Include="..\StockService\Protos\stock.proto" GrpcServices="Client">
       <Link>Protos\stock.proto</Link>

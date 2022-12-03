@@ -105,7 +105,7 @@ namespace StockService.Services
         public override Task<DeleteStockReply> DeleteStock(DeleteStockRequest request, ServerCallContext context)
         {
             var stock = (from s in _context.Stocks
-                        where s.Id == request.Id
+                        where s.ProdId == request.Id
                         select s).SingleOrDefault();
             if (stock == null)
             {

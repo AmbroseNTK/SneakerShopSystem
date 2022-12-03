@@ -70,6 +70,7 @@
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\OrderService\bin\Debug\net7.0\appsettings.Development.json
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\OrderService\bin\Debug\net7.0\appsettings.json
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\OrderService\bin\Debug\net7.0\OrderService.exe
+D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\OrderService\bin\Debug\net7.0\Order.db
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\OrderService\bin\Debug\net7.0\OrderService.deps.json
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\OrderService\bin\Debug\net7.0\OrderService.runtimeconfig.json
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\OrderService\bin\Debug\net7.0\OrderService.dll

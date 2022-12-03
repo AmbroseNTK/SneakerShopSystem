@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option csharp_namespace = "ProductService";
 
-package greet;
+package product;
 
 // The greeting service definition.
 service Product {

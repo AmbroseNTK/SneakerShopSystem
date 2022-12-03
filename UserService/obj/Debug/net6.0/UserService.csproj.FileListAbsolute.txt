@@ -109,7 +109,6 @@ D:/Repos/itss/SneakerShop-Core/UserService/obj/Debug/net6.0/ref/UserService.dll
 /Users/ambrose/Projects/SneakerShopSystem/UserService/obj/Debug/net6.0/UserService.pdb
 /Users/ambrose/Projects/SneakerShopSystem/UserService/obj/Debug/net6.0/UserService.genruntimeconfig.cache
 /Users/ambrose/Projects/SneakerShopSystem/UserService/obj/Debug/net6.0/ref/UserService.dll
-D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\UserService\bin\Debug\net6.0\runtimes\linux-x86\native\libe_sqlite3.so
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\UserService\bin\Debug\net6.0\appsettings.Development.json
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\UserService\bin\Debug\net6.0\appsettings.json
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\UserService\bin\Debug\net6.0\UserService.exe
@@ -162,6 +161,7 @@ D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\UserService\bin\Debug\net6.0\
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\UserService\bin\Debug\net6.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\UserService\bin\Debug\net6.0\runtimes\linux-s390x\native\libe_sqlite3.so
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\UserService\bin\Debug\net6.0\runtimes\linux-x64\native\libe_sqlite3.so
+D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\UserService\bin\Debug\net6.0\runtimes\linux-x86\native\libe_sqlite3.so
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\UserService\bin\Debug\net6.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\UserService\bin\Debug\net6.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\UserService\bin\Debug\net6.0\runtimes\osx-arm64\native\libe_sqlite3.dylib

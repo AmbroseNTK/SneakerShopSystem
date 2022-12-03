@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -11,7 +11,15 @@
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
   <ItemGroup>
-    <Protobuf Include="..\ProductService\Protos\product.proto" GrpcServices="Client">
+    <None Remove="Order.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Order.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Protobuf Include="..\ProductService\Protos\product.proto" GrpcServices="Both">
       <Link>Protos\product.proto</Link>
     </Protobuf>
     <Protobuf Include="Protos\order.proto" GrpcServices="Server" />

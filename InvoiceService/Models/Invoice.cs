@@ -9,5 +9,5 @@ public partial class Invoice
 
     public long OrderId { get; set; }
 
-    public long CreatedAt { get; set; }
+    public string CreatedAt { get; set; } = null!;
 }

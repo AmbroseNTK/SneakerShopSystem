@@ -25,7 +25,7 @@ namespace OrderService {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChJQcm90b3Mvb3JkZXIucHJvdG8SBW9yZGVyIkkKCU9yZGVyRGF0YRIKCgJp",
-            "ZBgBIAEoAxINCgV0b3RhbBgCIAEoARIRCgljcmVhdGVkQXQYAyABKAUSDgoG",
+            "ZBgBIAEoAxINCgV0b3RhbBgCIAEoARIRCgljcmVhdGVkQXQYAyABKAkSDgoG",
             "dXNlcklEGAQgASgDIlAKD09yZGVyRGV0YWlsRGF0YRIKCgJpZBgBIAEoAxIP",
             "CgdvcmRlcklEGAIgASgDEg4KBnByb2RJRBgDIAEoAxIQCghxdWFudGl0eRgE",
             "IAEoBSJqChJDcmVhdGVPcmRlclJlcXVlc3QSIwoJb3JkZXJEYXRhGAEgASgL",
@@ -144,13 +144,13 @@ namespace OrderService {
 
     /// <summary>Field number for the "createdAt" field.</summary>
     public const int CreatedAtFieldNumber = 3;
-    private int createdAt_;
+    private string createdAt_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CreatedAt {
+    public string CreatedAt {
       get { return createdAt_; }
       set {
-        createdAt_ = value;
+        createdAt_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -194,7 +194,7 @@ namespace OrderService {
       int hash = 1;
       if (Id != 0L) hash ^= Id.GetHashCode();
       if (Total != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Total);
-      if (CreatedAt != 0) hash ^= CreatedAt.GetHashCode();
+      if (CreatedAt.Length != 0) hash ^= CreatedAt.GetHashCode();
       if (UserID != 0L) hash ^= UserID.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -222,9 +222,9 @@ namespace OrderService {
         output.WriteRawTag(17);
         output.WriteDouble(Total);
       }
-      if (CreatedAt != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(CreatedAt);
+      if (CreatedAt.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(CreatedAt);
       }
       if (UserID != 0L) {
         output.WriteRawTag(32);
@@ -248,9 +248,9 @@ namespace OrderService {
         output.WriteRawTag(17);
         output.WriteDouble(Total);
       }
-      if (CreatedAt != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(CreatedAt);
+      if (CreatedAt.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(CreatedAt);
       }
       if (UserID != 0L) {
         output.WriteRawTag(32);
@@ -272,8 +272,8 @@ namespace OrderService {
       if (Total != 0D) {
         size += 1 + 8;
       }
-      if (CreatedAt != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CreatedAt);
+      if (CreatedAt.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CreatedAt);
       }
       if (UserID != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(UserID);
@@ -296,7 +296,7 @@ namespace OrderService {
       if (other.Total != 0D) {
         Total = other.Total;
       }
-      if (other.CreatedAt != 0) {
+      if (other.CreatedAt.Length != 0) {
         CreatedAt = other.CreatedAt;
       }
       if (other.UserID != 0L) {
@@ -325,8 +325,8 @@ namespace OrderService {
             Total = input.ReadDouble();
             break;
           }
-          case 24: {
-            CreatedAt = input.ReadInt32();
+          case 26: {
+            CreatedAt = input.ReadString();
             break;
           }
           case 32: {
@@ -356,8 +356,8 @@ namespace OrderService {
             Total = input.ReadDouble();
             break;
           }
-          case 24: {
-            CreatedAt = input.ReadInt32();
+          case 26: {
+            CreatedAt = input.ReadString();
             break;
           }
           case 32: {

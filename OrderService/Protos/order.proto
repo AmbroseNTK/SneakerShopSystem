@@ -16,7 +16,7 @@ service Order {
 message OrderData {
 	int64 id = 1;
 	double total = 2;
-	int32 createdAt = 3;
+	string createdAt = 3;
 	int64 userID = 4;
 }
 

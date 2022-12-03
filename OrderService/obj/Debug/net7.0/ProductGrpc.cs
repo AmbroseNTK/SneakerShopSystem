@@ -13,7 +13,7 @@ namespace ProductService {
   /// </summary>
   public static partial class Product
   {
-    static readonly string __ServiceName = "greet.Product";
+    static readonly string __ServiceName = "product.Product";
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
@@ -49,94 +49,142 @@ namespace ProductService {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ProductService.CreateProductRequest> __Marshaller_greet_CreateProductRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.CreateProductRequest.Parser));
+    static readonly grpc::Marshaller<global::ProductService.CreateProductRequest> __Marshaller_product_CreateProductRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.CreateProductRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ProductService.CreateProductReply> __Marshaller_greet_CreateProductReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.CreateProductReply.Parser));
+    static readonly grpc::Marshaller<global::ProductService.CreateProductReply> __Marshaller_product_CreateProductReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.CreateProductReply.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ProductService.GetNumOfProductRequest> __Marshaller_greet_GetNumOfProductRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.GetNumOfProductRequest.Parser));
+    static readonly grpc::Marshaller<global::ProductService.GetNumOfProductRequest> __Marshaller_product_GetNumOfProductRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.GetNumOfProductRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ProductService.GetNumOfProductReply> __Marshaller_greet_GetNumOfProductReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.GetNumOfProductReply.Parser));
+    static readonly grpc::Marshaller<global::ProductService.GetNumOfProductReply> __Marshaller_product_GetNumOfProductReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.GetNumOfProductReply.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ProductService.GetProductByIdRequest> __Marshaller_greet_GetProductByIdRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.GetProductByIdRequest.Parser));
+    static readonly grpc::Marshaller<global::ProductService.GetProductByIdRequest> __Marshaller_product_GetProductByIdRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.GetProductByIdRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ProductService.GetProductByIdReply> __Marshaller_greet_GetProductByIdReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.GetProductByIdReply.Parser));
+    static readonly grpc::Marshaller<global::ProductService.GetProductByIdReply> __Marshaller_product_GetProductByIdReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.GetProductByIdReply.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ProductService.GetProductPaginateRequest> __Marshaller_greet_GetProductPaginateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.GetProductPaginateRequest.Parser));
+    static readonly grpc::Marshaller<global::ProductService.GetProductPaginateRequest> __Marshaller_product_GetProductPaginateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.GetProductPaginateRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ProductService.GetProductPaginateReply> __Marshaller_greet_GetProductPaginateReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.GetProductPaginateReply.Parser));
+    static readonly grpc::Marshaller<global::ProductService.GetProductPaginateReply> __Marshaller_product_GetProductPaginateReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.GetProductPaginateReply.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ProductService.UpdateProductRequest> __Marshaller_greet_UpdateProductRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.UpdateProductRequest.Parser));
+    static readonly grpc::Marshaller<global::ProductService.UpdateProductRequest> __Marshaller_product_UpdateProductRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.UpdateProductRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ProductService.UpdateProductReply> __Marshaller_greet_UpdateProductReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.UpdateProductReply.Parser));
+    static readonly grpc::Marshaller<global::ProductService.UpdateProductReply> __Marshaller_product_UpdateProductReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.UpdateProductReply.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ProductService.DeleteProductRequest> __Marshaller_greet_DeleteProductRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.DeleteProductRequest.Parser));
+    static readonly grpc::Marshaller<global::ProductService.DeleteProductRequest> __Marshaller_product_DeleteProductRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.DeleteProductRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ProductService.DeleteProductReply> __Marshaller_greet_DeleteProductReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.DeleteProductReply.Parser));
+    static readonly grpc::Marshaller<global::ProductService.DeleteProductReply> __Marshaller_product_DeleteProductReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.DeleteProductReply.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ProductService.GetProductPriceRequest> __Marshaller_greet_GetProductPriceRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.GetProductPriceRequest.Parser));
+    static readonly grpc::Marshaller<global::ProductService.GetProductPriceRequest> __Marshaller_product_GetProductPriceRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.GetProductPriceRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ProductService.GetProductPriceReply> __Marshaller_greet_GetProductPriceReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.GetProductPriceReply.Parser));
+    static readonly grpc::Marshaller<global::ProductService.GetProductPriceReply> __Marshaller_product_GetProductPriceReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ProductService.GetProductPriceReply.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::ProductService.CreateProductRequest, global::ProductService.CreateProductReply> __Method_AddProduct = new grpc::Method<global::ProductService.CreateProductRequest, global::ProductService.CreateProductReply>(
         grpc::MethodType.Unary,
         __ServiceName,
         "AddProduct",
-        __Marshaller_greet_CreateProductRequest,
-        __Marshaller_greet_CreateProductReply);
+        __Marshaller_product_CreateProductRequest,
+        __Marshaller_product_CreateProductReply);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::ProductService.GetNumOfProductRequest, global::ProductService.GetNumOfProductReply> __Method_GetNumOfProduct = new grpc::Method<global::ProductService.GetNumOfProductRequest, global::ProductService.GetNumOfProductReply>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetNumOfProduct",
-        __Marshaller_greet_GetNumOfProductRequest,
-        __Marshaller_greet_GetNumOfProductReply);
+        __Marshaller_product_GetNumOfProductRequest,
+        __Marshaller_product_GetNumOfProductReply);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::ProductService.GetProductByIdRequest, global::ProductService.GetProductByIdReply> __Method_GetProductById = new grpc::Method<global::ProductService.GetProductByIdRequest, global::ProductService.GetProductByIdReply>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetProductById",
-        __Marshaller_greet_GetProductByIdRequest,
-        __Marshaller_greet_GetProductByIdReply);
+        __Marshaller_product_GetProductByIdRequest,
+        __Marshaller_product_GetProductByIdReply);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::ProductService.GetProductPaginateRequest, global::ProductService.GetProductPaginateReply> __Method_GetProductPaginate = new grpc::Method<global::ProductService.GetProductPaginateRequest, global::ProductService.GetProductPaginateReply>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetProductPaginate",
-        __Marshaller_greet_GetProductPaginateRequest,
-        __Marshaller_greet_GetProductPaginateReply);
+        __Marshaller_product_GetProductPaginateRequest,
+        __Marshaller_product_GetProductPaginateReply);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::ProductService.UpdateProductRequest, global::ProductService.UpdateProductReply> __Method_UpdateProduct = new grpc::Method<global::ProductService.UpdateProductRequest, global::ProductService.UpdateProductReply>(
         grpc::MethodType.Unary,
         __ServiceName,
         "UpdateProduct",
-        __Marshaller_greet_UpdateProductRequest,
-        __Marshaller_greet_UpdateProductReply);
+        __Marshaller_product_UpdateProductRequest,
+        __Marshaller_product_UpdateProductReply);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::ProductService.DeleteProductRequest, global::ProductService.DeleteProductReply> __Method_DeleteProduct = new grpc::Method<global::ProductService.DeleteProductRequest, global::ProductService.DeleteProductReply>(
         grpc::MethodType.Unary,
         __ServiceName,
         "DeleteProduct",
-        __Marshaller_greet_DeleteProductRequest,
-        __Marshaller_greet_DeleteProductReply);
+        __Marshaller_product_DeleteProductRequest,
+        __Marshaller_product_DeleteProductReply);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::ProductService.GetProductPriceRequest, global::ProductService.GetProductPriceReply> __Method_GetProductPrice = new grpc::Method<global::ProductService.GetProductPriceRequest, global::ProductService.GetProductPriceReply>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetProductPrice",
-        __Marshaller_greet_GetProductPriceRequest,
-        __Marshaller_greet_GetProductPriceReply);
+        __Marshaller_product_GetProductPriceRequest,
+        __Marshaller_product_GetProductPriceReply);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
       get { return global::ProductService.ProductReflection.Descriptor.Services[0]; }
+    }
+
+    /// <summary>Base class for server-side implementations of Product</summary>
+    [grpc::BindServiceMethod(typeof(Product), "BindService")]
+    public abstract partial class ProductBase
+    {
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::ProductService.CreateProductReply> AddProduct(global::ProductService.CreateProductRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::ProductService.GetNumOfProductReply> GetNumOfProduct(global::ProductService.GetNumOfProductRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::ProductService.GetProductByIdReply> GetProductById(global::ProductService.GetProductByIdRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::ProductService.GetProductPaginateReply> GetProductPaginate(global::ProductService.GetProductPaginateRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::ProductService.UpdateProductReply> UpdateProduct(global::ProductService.UpdateProductRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::ProductService.DeleteProductReply> DeleteProduct(global::ProductService.DeleteProductRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::ProductService.GetProductPriceReply> GetProductPrice(global::ProductService.GetProductPriceRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Client for Product</summary>
@@ -312,6 +360,37 @@ namespace ProductService {
       {
         return new ProductClient(configuration);
       }
+    }
+
+    /// <summary>Creates service definition that can be registered with a server</summary>
+    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public static grpc::ServerServiceDefinition BindService(ProductBase serviceImpl)
+    {
+      return grpc::ServerServiceDefinition.CreateBuilder()
+          .AddMethod(__Method_AddProduct, serviceImpl.AddProduct)
+          .AddMethod(__Method_GetNumOfProduct, serviceImpl.GetNumOfProduct)
+          .AddMethod(__Method_GetProductById, serviceImpl.GetProductById)
+          .AddMethod(__Method_GetProductPaginate, serviceImpl.GetProductPaginate)
+          .AddMethod(__Method_UpdateProduct, serviceImpl.UpdateProduct)
+          .AddMethod(__Method_DeleteProduct, serviceImpl.DeleteProduct)
+          .AddMethod(__Method_GetProductPrice, serviceImpl.GetProductPrice).Build();
+    }
+
+    /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
+    /// Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+    /// <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public static void BindService(grpc::ServiceBinderBase serviceBinder, ProductBase serviceImpl)
+    {
+      serviceBinder.AddMethod(__Method_AddProduct, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ProductService.CreateProductRequest, global::ProductService.CreateProductReply>(serviceImpl.AddProduct));
+      serviceBinder.AddMethod(__Method_GetNumOfProduct, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ProductService.GetNumOfProductRequest, global::ProductService.GetNumOfProductReply>(serviceImpl.GetNumOfProduct));
+      serviceBinder.AddMethod(__Method_GetProductById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ProductService.GetProductByIdRequest, global::ProductService.GetProductByIdReply>(serviceImpl.GetProductById));
+      serviceBinder.AddMethod(__Method_GetProductPaginate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ProductService.GetProductPaginateRequest, global::ProductService.GetProductPaginateReply>(serviceImpl.GetProductPaginate));
+      serviceBinder.AddMethod(__Method_UpdateProduct, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ProductService.UpdateProductRequest, global::ProductService.UpdateProductReply>(serviceImpl.UpdateProduct));
+      serviceBinder.AddMethod(__Method_DeleteProduct, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ProductService.DeleteProductRequest, global::ProductService.DeleteProductReply>(serviceImpl.DeleteProduct));
+      serviceBinder.AddMethod(__Method_GetProductPrice, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ProductService.GetProductPriceRequest, global::ProductService.GetProductPriceReply>(serviceImpl.GetProductPrice));
     }
 
   }

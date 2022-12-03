@@ -11,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddGrpc();
 builder.Services.AddScoped<OrderContext>();
 
-using var productChannel = GrpcChannel.ForAddress("http://localhost:30002");
+using var productChannel = GrpcChannel.ForAddress("http://172.24.208.1:30002");
 var productClient = new ProductService.Product.ProductClient(productChannel);
 builder.Services.Add(ServiceDescriptor.Singleton(typeof(ProductService.Product.ProductClient), productClient));
 
