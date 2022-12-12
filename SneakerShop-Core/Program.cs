@@ -1,6 +1,7 @@
 
 
 using Grpc.Net.Client;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,13 +12,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-using var userChannel = GrpcChannel.ForAddress("http://172.24.208.1:30000");
-using var authChannel = GrpcChannel.ForAddress("http://172.24.208.1:30001");
-using var productChannel = GrpcChannel.ForAddress("http://172.24.208.1:30002");
-using var stockChannel = GrpcChannel.ForAddress("http://172.24.208.1:30003");
-using var orderChannel = GrpcChannel.ForAddress("http://172.24.208.1:30004");
-using var shippingChannel = GrpcChannel.ForAddress("http://172.24.208.1:30005");
-using var invoiceChannel = GrpcChannel.ForAddress("http://172.24.208.1:30006");
+using var userChannel = GrpcChannel.ForAddress("https://userservice.sneaker.manhvipro.xyz");
+using var authChannel = GrpcChannel.ForAddress("http://172.24.32.1:30001");
+using var productChannel = GrpcChannel.ForAddress("https://productservice.sneaker.manhvipro.xyz");
+using var stockChannel = GrpcChannel.ForAddress("https://stockservice.sneaker.manhvipro.xyz");
+using var orderChannel = GrpcChannel.ForAddress("https://orderservice.sneaker.manhvipro.xyz");
+using var shippingChannel = GrpcChannel.ForAddress("https://shippingservice.sneaker.manhvipro.xyz");
+using var invoiceChannel = GrpcChannel.ForAddress("https://invoiceservice.sneaker.manhvipro.xyz");
 
 var userClient = new UserService.User.UserClient(userChannel);
 var authClient = new AuthService.Auth.AuthClient(authChannel);
@@ -39,12 +40,13 @@ var app = builder.Build();
 
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+/*if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
+    
+}*/
+app.UseHttpsRedirection();
+app.UseSwagger();
+app.UseSwaggerUI();
 app.UseAuthorization();
 
 app.MapControllers();

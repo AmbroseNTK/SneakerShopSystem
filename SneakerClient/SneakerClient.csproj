@@ -48,4 +48,19 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="Resources\Fonts\MavenPro-Regular.ttf" />
+	  <None Remove="Resources\Fonts\MavenPro-SemiBold.ttf" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Models\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="HomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>

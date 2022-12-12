@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+
+
 <Shell
     x:Class="SneakerClient.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:SneakerClient"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:views="clr-namespace:SneakerClient.Views"
+    FlyoutHeaderBehavior="CollapseOnScroll"
+    x:Name="shell">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
 
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" >
+                        
+                    </RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Text="{Binding Title}">
+                    
+                </Label>
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+
+    <ShellContent Title="About"
+                  Icon="info.png"
+                  ContentTemplate="{DataTemplate views:LoginPage}" />
 </Shell>

@@ -9,8 +9,8 @@
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {
-                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("MavenPro-Regular.ttf", "MavenProRegular");
+                    fonts.AddFont("MavenPro-Semibold.ttf", "MavenProSemibold");
                 });
 
             return builder.Build();

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bHrJMqG2Y3EO4v2HMbDB8V8c6Vw19U0UcdBs7NEsq5hq5Z06b2N31sOVpK5Jd2Y4x3VNt5MtgD//64jtdc6nTQ==",
+  "dgSpecHash": "L7qLx1C+JIPNyr2OH8OFXDxxipyZRPFLFU0geTJjIrFOsviagIWlE+ZiBJBIJW8yajCtTd7AGLqdn3bNELm0Hg==",
   "success": true,
   "projectFilePath": "D:\\Software-Archirtecture\\DoAnCK\\SneakerShopSystem\\SneakerShop-Core\\Gateway.csproj",
   "expectedPackageFiles": [
@@ -44,6 +44,7 @@
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",

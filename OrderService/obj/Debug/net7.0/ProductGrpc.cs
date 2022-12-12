@@ -139,54 +139,6 @@ namespace ProductService {
       get { return global::ProductService.ProductReflection.Descriptor.Services[0]; }
     }
 
-    /// <summary>Base class for server-side implementations of Product</summary>
-    [grpc::BindServiceMethod(typeof(Product), "BindService")]
-    public abstract partial class ProductBase
-    {
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::ProductService.CreateProductReply> AddProduct(global::ProductService.CreateProductRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::ProductService.GetNumOfProductReply> GetNumOfProduct(global::ProductService.GetNumOfProductRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::ProductService.GetProductByIdReply> GetProductById(global::ProductService.GetProductByIdRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::ProductService.GetProductPaginateReply> GetProductPaginate(global::ProductService.GetProductPaginateRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::ProductService.UpdateProductReply> UpdateProduct(global::ProductService.UpdateProductRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::ProductService.DeleteProductReply> DeleteProduct(global::ProductService.DeleteProductRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::ProductService.GetProductPriceReply> GetProductPrice(global::ProductService.GetProductPriceRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-    }
-
     /// <summary>Client for Product</summary>
     public partial class ProductClient : grpc::ClientBase<ProductClient>
     {
@@ -360,37 +312,6 @@ namespace ProductService {
       {
         return new ProductClient(configuration);
       }
-    }
-
-    /// <summary>Creates service definition that can be registered with a server</summary>
-    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    public static grpc::ServerServiceDefinition BindService(ProductBase serviceImpl)
-    {
-      return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_AddProduct, serviceImpl.AddProduct)
-          .AddMethod(__Method_GetNumOfProduct, serviceImpl.GetNumOfProduct)
-          .AddMethod(__Method_GetProductById, serviceImpl.GetProductById)
-          .AddMethod(__Method_GetProductPaginate, serviceImpl.GetProductPaginate)
-          .AddMethod(__Method_UpdateProduct, serviceImpl.UpdateProduct)
-          .AddMethod(__Method_DeleteProduct, serviceImpl.DeleteProduct)
-          .AddMethod(__Method_GetProductPrice, serviceImpl.GetProductPrice).Build();
-    }
-
-    /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
-    /// Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
-    /// <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
-    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    public static void BindService(grpc::ServiceBinderBase serviceBinder, ProductBase serviceImpl)
-    {
-      serviceBinder.AddMethod(__Method_AddProduct, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ProductService.CreateProductRequest, global::ProductService.CreateProductReply>(serviceImpl.AddProduct));
-      serviceBinder.AddMethod(__Method_GetNumOfProduct, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ProductService.GetNumOfProductRequest, global::ProductService.GetNumOfProductReply>(serviceImpl.GetNumOfProduct));
-      serviceBinder.AddMethod(__Method_GetProductById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ProductService.GetProductByIdRequest, global::ProductService.GetProductByIdReply>(serviceImpl.GetProductById));
-      serviceBinder.AddMethod(__Method_GetProductPaginate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ProductService.GetProductPaginateRequest, global::ProductService.GetProductPaginateReply>(serviceImpl.GetProductPaginate));
-      serviceBinder.AddMethod(__Method_UpdateProduct, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ProductService.UpdateProductRequest, global::ProductService.UpdateProductReply>(serviceImpl.UpdateProduct));
-      serviceBinder.AddMethod(__Method_DeleteProduct, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ProductService.DeleteProductRequest, global::ProductService.DeleteProductReply>(serviceImpl.DeleteProduct));
-      serviceBinder.AddMethod(__Method_GetProductPrice, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ProductService.GetProductPriceRequest, global::ProductService.GetProductPriceReply>(serviceImpl.GetProductPrice));
     }
 
   }

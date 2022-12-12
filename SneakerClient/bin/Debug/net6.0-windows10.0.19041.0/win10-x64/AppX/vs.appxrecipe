@@ -30,25 +30,25 @@
     <AppXManifest Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-12-01T10:42:04.023</Modified>
+      <Modified>2022-12-07T14:29:41.991</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-12-01T10:42:03.373</Modified>
+      <Modified>2022-12-07T14:29:41.438</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\SneakerClient.runtimeconfig.json">
       <PackagePath>SneakerClient.runtimeconfig.json</PackagePath>
-      <Modified>2022-12-01T10:42:03.145</Modified>
+      <Modified>2022-12-07T08:50:26.340</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\SneakerClient.dll">
       <PackagePath>SneakerClient.dll</PackagePath>
-      <Modified>2022-12-01T10:42:01.016</Modified>
+      <Modified>2022-12-07T14:29:39.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>SneakerClient.exe</PackagePath>
-      <Modified>2022-12-01T10:42:01.047</Modified>
+      <Modified>2022-12-07T14:29:39.660</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.11\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1064,7 +1064,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\SneakerClient.deps.json">
       <PackagePath>SneakerClient.deps.json</PackagePath>
-      <Modified>2022-12-01T10:42:03.667</Modified>
+      <Modified>2022-12-07T14:29:41.767</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.maui.controls.ref.win\6.0.547\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -1084,23 +1084,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.158</Modified>
+      <Modified>2022-12-06T18:34:11.760</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.177</Modified>
+      <Modified>2022-12-06T18:34:11.781</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.203</Modified>
+      <Modified>2022-12-06T18:34:11.805</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.234</Modified>
+      <Modified>2022-12-06T18:34:11.857</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.358</Modified>
+      <Modified>2022-12-06T18:34:12.020</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\MavenPro-Regular.ttf">
+      <PackagePath>MavenPro-Regular.ttf</PackagePath>
+      <Modified>2022-12-07T08:49:38.248</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\MavenPro-SemiBold.ttf">
+      <PackagePath>MavenPro-SemiBold.ttf</PackagePath>
+      <Modified>2022-12-07T08:49:38.314</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -1112,207 +1120,207 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2022-12-01T10:42:00.411</Modified>
+      <Modified>2022-12-06T18:34:12.071</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.712</Modified>
+      <Modified>2022-12-06T18:34:12.525</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.727</Modified>
+      <Modified>2022-12-06T18:34:12.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.736</Modified>
+      <Modified>2022-12-06T18:34:12.559</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.753</Modified>
+      <Modified>2022-12-06T18:34:12.582</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.832</Modified>
+      <Modified>2022-12-06T18:34:12.658</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.485</Modified>
+      <Modified>2022-12-06T18:34:12.175</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.489</Modified>
+      <Modified>2022-12-06T18:34:12.180</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.507</Modified>
+      <Modified>2022-12-06T18:34:12.234</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.493</Modified>
+      <Modified>2022-12-06T18:34:12.216</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.496</Modified>
+      <Modified>2022-12-06T18:34:12.220</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.461</Modified>
+      <Modified>2022-12-06T18:34:12.142</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.466</Modified>
+      <Modified>2022-12-06T18:34:12.150</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.482</Modified>
+      <Modified>2022-12-06T18:34:12.171</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.469</Modified>
+      <Modified>2022-12-06T18:34:12.155</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.474</Modified>
+      <Modified>2022-12-06T18:34:12.159</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.420</Modified>
+      <Modified>2022-12-06T18:34:12.082</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.423</Modified>
+      <Modified>2022-12-06T18:34:12.086</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.428</Modified>
+      <Modified>2022-12-06T18:34:12.092</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.432</Modified>
+      <Modified>2022-12-06T18:34:12.097</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.437</Modified>
+      <Modified>2022-12-06T18:34:12.103</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.440</Modified>
+      <Modified>2022-12-06T18:34:12.107</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.442</Modified>
+      <Modified>2022-12-06T18:34:12.111</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.458</Modified>
+      <Modified>2022-12-06T18:34:12.137</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.445</Modified>
+      <Modified>2022-12-06T18:34:12.116</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.449</Modified>
+      <Modified>2022-12-06T18:34:12.122</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.572</Modified>
+      <Modified>2022-12-06T18:34:12.397</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.579</Modified>
+      <Modified>2022-12-06T18:34:12.405</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.590</Modified>
+      <Modified>2022-12-06T18:34:12.412</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.606</Modified>
+      <Modified>2022-12-06T18:34:12.422</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.625</Modified>
+      <Modified>2022-12-06T18:34:12.438</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.538</Modified>
+      <Modified>2022-12-06T18:34:12.312</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.541</Modified>
+      <Modified>2022-12-06T18:34:12.349</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.546</Modified>
+      <Modified>2022-12-06T18:34:12.361</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.553</Modified>
+      <Modified>2022-12-06T18:34:12.367</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.566</Modified>
+      <Modified>2022-12-06T18:34:12.382</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.512</Modified>
+      <Modified>2022-12-06T18:34:12.239</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.517</Modified>
+      <Modified>2022-12-06T18:34:12.248</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.521</Modified>
+      <Modified>2022-12-06T18:34:12.267</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.526</Modified>
+      <Modified>2022-12-06T18:34:12.280</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.535</Modified>
+      <Modified>2022-12-06T18:34:12.301</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.631</Modified>
+      <Modified>2022-12-06T18:34:12.444</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.638</Modified>
+      <Modified>2022-12-06T18:34:12.453</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.648</Modified>
+      <Modified>2022-12-06T18:34:12.462</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.661</Modified>
+      <Modified>2022-12-06T18:34:12.477</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.703</Modified>
+      <Modified>2022-12-06T18:34:12.517</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.459</Modified>
+      <Modified>2022-12-06T18:34:12.120</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.472</Modified>
+      <Modified>2022-12-06T18:34:12.138</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.486</Modified>
+      <Modified>2022-12-06T18:34:12.160</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.509</Modified>
+      <Modified>2022-12-06T18:34:12.193</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2022-12-01T10:42:00.577</Modified>
+      <Modified>2022-12-06T18:34:12.379</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

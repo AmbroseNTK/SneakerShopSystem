@@ -358,3 +358,5 @@ D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\MavenPro-Regular.ttf
+D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\MavenPro-SemiBold.ttf
