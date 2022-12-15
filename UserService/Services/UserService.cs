@@ -89,7 +89,7 @@ namespace UserService.Services
             }
             else
             {
-
+                user.Email = request.Data.Email;
                 user.Name = request.Data.Name;
                 user.Role = request.Data.Role;
                 _context.SaveChanges();
