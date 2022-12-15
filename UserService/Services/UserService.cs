@@ -16,16 +16,32 @@ namespace UserService.Services
 
         public override Task<CreateUserReply> AddUser(CreateUserRequest request, ServerCallContext context)
         {
-            _context.Users.Add(new Models.User()
+            _context.Users.Load();
+            var user = (from u in _context.Users
+                        where u.Email == request.Data.Email
+                        select new UserData { Id = u.Id, Name = u.Name, Role = u.Role }).SingleOrDefault();
+            if (user == null)
             {
-                Name = request.Data.Name,
-                Role = request.Data.Role,
-            });
-            _context.SaveChanges();
-            return Task.FromResult(new CreateUserReply
+                _context.Users.Add(new Models.User()
+                {
+                    Name = request.Data.Name,
+                    Role = request.Data.Role,
+                    Email = request.Data.Email
+                });
+                _context.SaveChanges();
+                return Task.FromResult(new CreateUserReply
+                {
+                    Message = "Created"
+                });
+            }
+            else
             {
-                Message = "Created"
-            });
+                return Task.FromResult(new CreateUserReply
+                {
+                    Message = "User account is already exist !!"
+                });
+            }
+          
         }
 
         public override Task<GetUserPaginateReply> GetUserPaginate(GetUserPaginateRequest request, ServerCallContext context)

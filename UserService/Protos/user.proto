@@ -18,6 +18,7 @@ message UserData {
 	string name = 1;
 	int64 id = 2;
 	string role = 3;
+	string email = 4;
 }
 
 message CreateUserRequest {
