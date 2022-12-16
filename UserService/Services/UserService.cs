@@ -16,10 +16,9 @@ namespace UserService.Services
 
         public override Task<CreateUserReply> AddUser(CreateUserRequest request, ServerCallContext context)
         {
-            _context.Users.Load();
             var user = (from u in _context.Users
                         where u.Email == request.Data.Email
-                        select new UserData { Id = u.Id, Name = u.Name, Role = u.Role }).SingleOrDefault();
+                        select u).SingleOrDefault();
             if (user == null)
             {
                 _context.Users.Add(new Models.User()
@@ -49,7 +48,7 @@ namespace UserService.Services
             _context.Users.Load();
             var users = (from user in _context.Users
                          where user.Id > request.AfterID
-                         select new UserData { Id = user.Id, Name = user.Name, Role = user.Role }).Take(request.Limit);
+                         select new UserData { Id = user.Id, Name = user.Name, Role = user.Role, Email = user.Email}).Take(request.Limit);
             var result = new GetUserPaginateReply();
             foreach (var user in users)
             {
@@ -71,7 +70,7 @@ namespace UserService.Services
         {
             var user = (from u in _context.Users
                         where u.Id == request.Id
-                        select new UserData { Id = u.Id, Name = u.Name, Role = u.Role }).SingleOrDefault();
+                        select new UserData { Id = u.Id, Name = u.Name, Role = u.Role, Email = u.Email }).SingleOrDefault();
 
             var result = new GetUserByIdReply { Data = user };
             return Task.FromResult(result);
@@ -89,9 +88,9 @@ namespace UserService.Services
             }
             else
             {
-                user.Email = request.Data.Email;
                 user.Name = request.Data.Name;
                 user.Role = request.Data.Role;
+                user.Email = request.Data.Email;
                 _context.SaveChanges();
             }
             return Task.FromResult(new UpdateUserReply { IsSuccess = true });
