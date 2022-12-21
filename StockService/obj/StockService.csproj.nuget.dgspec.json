@@ -1,32 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Software-Archirtecture\\DoAnCK\\SneakerShopSystem\\StockService\\StockService.csproj": {}
+    "/Users/manhvipro/Repos/Software-Architecture/DoAnCK/SneakerShopSystem/StockService/StockService.csproj": {}
   },
   "projects": {
-    "D:\\Software-Archirtecture\\DoAnCK\\SneakerShopSystem\\StockService\\StockService.csproj": {
+    "/Users/manhvipro/Repos/Software-Architecture/DoAnCK/SneakerShopSystem/StockService/StockService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Software-Archirtecture\\DoAnCK\\SneakerShopSystem\\StockService\\StockService.csproj",
+        "projectUniqueName": "/Users/manhvipro/Repos/Software-Architecture/DoAnCK/SneakerShopSystem/StockService/StockService.csproj",
         "projectName": "StockService",
-        "projectPath": "D:\\Software-Archirtecture\\DoAnCK\\SneakerShopSystem\\StockService\\StockService.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Software-Archirtecture\\DoAnCK\\SneakerShopSystem\\StockService\\obj\\",
+        "projectPath": "/Users/manhvipro/Repos/Software-Architecture/DoAnCK/SneakerShopSystem/StockService/StockService.csproj",
+        "packagesPath": "/Users/manhvipro/.nuget/packages/",
+        "outputPath": "/Users/manhvipro/Repos/Software-Architecture/DoAnCK/SneakerShopSystem/StockService/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/manhvipro/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -51,23 +45,23 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.1, )"
             },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
@@ -93,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
         }
       }
     }

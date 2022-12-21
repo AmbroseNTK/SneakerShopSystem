@@ -9,23 +9,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Google.Api.CommonProtos" Version="2.6.0" />
-    <PackageReference Include="Google.Protobuf.Tools" Version="3.21.9" />
+    <PackageReference Include="Google.Api.CommonProtos" Version="2.7.0" />
+    <PackageReference Include="Google.Protobuf.Tools" Version="3.21.12" />
     <PackageReference Include="Grpc" Version="2.46.5" />
     <PackageReference Include="Grpc.AspNetCore" Version="2.50.0" />
     <PackageReference Include="Grpc.Core" Version="2.46.5" />
     <PackageReference Include="Grpc.Net.Client" Version="2.50.0" />
-    <PackageReference Include="Grpc.Tools" Version="2.50.0">
+    <PackageReference Include="Grpc.Tools" Version="2.51.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.0">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
-    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.25.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.25.1" />
   </ItemGroup>
 
   <ItemGroup>
