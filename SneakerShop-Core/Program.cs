@@ -12,8 +12,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-using var userChannel = GrpcChannel.ForAddress("https://userservice.sneaker.manhvipro.xyz");
-/*using var userChannel = GrpcChannel.ForAddress("http://192.168.1.11:30000");*/
+/*using var userChannel = GrpcChannel.ForAddress("https://userservice.sneaker.manhvipro.xyz");
+*/
+using var userChannel = GrpcChannel.ForAddress("http://localhost:30000");
 
 using var authChannel = GrpcChannel.ForAddress("http://172.24.32.1:30001");
 

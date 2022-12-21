@@ -25,7 +25,8 @@ namespace UserService.Services
                 {
                     Name = request.Data.Name,
                     Role = request.Data.Role,
-                    Email = request.Data.Email
+                    Email = request.Data.Email,
+                    PhotoUrl = request.Data.PhotoURL
                 });
                 _context.SaveChanges();
                 return Task.FromResult(new CreateUserReply
@@ -48,7 +49,7 @@ namespace UserService.Services
             _context.Users.Load();
             var users = (from user in _context.Users
                          where user.Id > request.AfterID
-                         select new UserData { Id = user.Id, Name = user.Name, Role = user.Role, Email = user.Email}).Take(request.Limit);
+                         select new UserData { Id = user.Id, Name = user.Name, Role = user.Role, Email = user.Email, PhotoURL = user.PhotoUrl}).Take(request.Limit);
             var result = new GetUserPaginateReply();
             foreach (var user in users)
             {
@@ -70,9 +71,19 @@ namespace UserService.Services
         {
             var user = (from u in _context.Users
                         where u.Id == request.Id
-                        select new UserData { Id = u.Id, Name = u.Name, Role = u.Role, Email = u.Email }).SingleOrDefault();
+                        select new UserData { Id = u.Id, Name = u.Name, Role = u.Role, Email = u.Email, PhotoURL = u.PhotoUrl }).SingleOrDefault();
 
             var result = new GetUserByIdReply { Data = user };
+            return Task.FromResult(result);
+        }
+
+        public override Task<GetUserByEmailReply> GetUserByEmail(GetUserByEmailRequest request, ServerCallContext context)
+        {
+            var user = (from u in _context.Users
+                        where u.Email == request.Email
+                        select new UserData { Id = u.Id, Name = u.Name, Role = u.Role, Email = u.Email, PhotoURL = u.PhotoUrl }).SingleOrDefault();
+
+            var result = new GetUserByEmailReply { Data = user };
             return Task.FromResult(result);
         }
 
@@ -91,6 +102,7 @@ namespace UserService.Services
                 user.Name = request.Data.Name;
                 user.Role = request.Data.Role;
                 user.Email = request.Data.Email;
+                user.PhotoUrl = request.Data.PhotoURL;
                 _context.SaveChanges();
             }
             return Task.FromResult(new UpdateUserReply { IsSuccess = true });

@@ -12,6 +12,7 @@ service User {
   rpc GetUserPaginate(GetUserPaginateRequest) returns(GetUserPaginateReply);
   rpc UpdateUser(UpdateUserRequest) returns(UpdateUserReply);
   rpc DeleteUser(DeleteUserRequest) returns(DeleteUserReply);
+  rpc GetUserByEmail(GetUserByEmailRequest) returns(GetUserByEmailReply);
 }
 
 message UserData {
@@ -19,6 +20,8 @@ message UserData {
 	int64 id = 2;
 	string role = 3;
 	string email = 4;
+	string photoURL = 5;
+
 }
 
 message CreateUserRequest {
@@ -42,6 +45,14 @@ message GetUserByIdRequest {
 }
 
 message GetUserByIdReply {
+	UserData data = 1;
+}
+
+message GetUserByEmailRequest{
+	string email = 1;
+}
+
+message GetUserByEmailReply{
 	UserData data = 1;
 }
 

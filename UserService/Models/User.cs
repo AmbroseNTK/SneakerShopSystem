@@ -12,4 +12,6 @@ public partial class User
     public string Role { get; set; } = null!;
 
     public string Email { get; set; } = null!;
+
+    public string PhotoUrl { get; set; } = null!;
 }
