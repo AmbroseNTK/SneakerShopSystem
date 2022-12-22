@@ -52,8 +52,8 @@ namespace SneakerShop_Core.Controllers
             return await _productClient.DeleteProductAsync(new ProductService.DeleteProductRequest { Id = id });
         }
 
-        [HttpGet("detail")]
-        public async Task<Models.ProductResponse> GetALLProductDetail([FromQuery]long id)
+        [HttpGet("all")]
+        public async Task<Models.ProductResponse> GetALLProductDetail()
         {
             var stocks = new List<StockService.StockData>();
             var total = await _productClient.GetNumOfProductAsync(new ProductService.GetNumOfProductRequest { Message = "" });
