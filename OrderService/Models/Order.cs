@@ -9,7 +9,9 @@ public partial class Order
 
     public double Total { get; set; }
 
-    public byte[] CreatedAt { get; set; } = null!;
+    public string CreatedAt { get; set; } = null!;
 
     public long UserId { get; set; }
+
+    public virtual ICollection<OrderDetail> OrderDetails { get; } = new List<OrderDetail>();
 }

@@ -21,7 +21,7 @@ public partial class OrderContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlite("Data Source=D:\\Software-Archirtecture\\DoAnCK\\SneakerShopSystem\\SQLiteDB\\Order.db;");
+        => optionsBuilder.UseSqlite("DataSource=Order.db");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -30,9 +30,7 @@ public partial class OrderContext : DbContext
             entity.ToTable("order");
 
             entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.CreatedAt)
-                .HasColumnType("NUMERIC")
-                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedAt).HasColumnName("created_at");
             entity.Property(e => e.Total).HasColumnName("total");
             entity.Property(e => e.UserId).HasColumnName("userID");
         });
@@ -42,11 +40,15 @@ public partial class OrderContext : DbContext
             entity.ToTable("order_detail");
 
             entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.OderId).HasColumnName("oderID");
+            entity.Property(e => e.OrderId).HasColumnName("orderID");
             entity.Property(e => e.ProdId).HasColumnName("prodID");
             entity.Property(e => e.Quantity)
                 .HasColumnType("NUMERIC")
                 .HasColumnName("quantity");
+
+            entity.HasOne(d => d.Order).WithMany(p => p.OrderDetails)
+                .HasForeignKey(d => d.OrderId)
+                .OnDelete(DeleteBehavior.Cascade);
         });
 
         OnModelCreatingPartial(modelBuilder);

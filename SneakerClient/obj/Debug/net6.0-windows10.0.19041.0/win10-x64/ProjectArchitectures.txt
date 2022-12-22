@@ -1,0 +1,1 @@
+D:\Software-Archirtecture\DoAnCK\SneakerShopSystem\SneakerClient\SneakerClient.csproj;x64

@@ -2,14 +2,14 @@
   "profiles": {
     "http": {
       "commandName": "Project",
-      "applicationUrl": "http://localhost:5163",
+      "applicationUrl": "http://localhost:30002",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
     "https": {
       "commandName": "Project",
-      "applicationUrl": "https://localhost:7130;http://localhost:5163",
+      "applicationUrl": "https://localhost:7130;http://localhost:30002",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

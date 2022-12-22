@@ -45,6 +45,12 @@ namespace SneakerShop_Core.Controllers
             return await _userClient.GetUserByIdAsync(new UserService.GetUserByIdRequest { Id = id});
         }
 
+        [HttpGet("auth")]
+        public async Task<UserService.GetUserByEmailReply> GetUserByEmail([FromQuery]string email)
+        {
+            return await _userClient.GetUserByEmailAsync(new UserService.GetUserByEmailRequest { Email = email });
+        }
+
         [HttpPut("update")]
         public async Task<UserService.UpdateUserReply> UpdateUser(UserService.UpdateUserRequest updateUserRequest)
         {
@@ -58,6 +64,7 @@ namespace SneakerShop_Core.Controllers
             var result = await _userClient.DeleteUserAsync(new UserService.DeleteUserRequest { Id = id });
             return result;
         }
+
     }
 }
 

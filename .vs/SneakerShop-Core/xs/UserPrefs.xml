@@ -1,46 +1,20 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{163AB280-D336-43C8-BDE6-258AFE26799E}|Default">
+  <MonoDevelop.Ide.ItemProperties.Gateway PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="UserService/Services/UserService.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="SneakerShop-Core/Program.cs">
     <Files>
-      <File FileName="SneakerShop-Core/Program.cs" />
       <File FileName="UserService/Protos/user.proto" />
-      <File FileName="SneakerShop-Core/Properties/launchSettings.json" />
-      <File FileName="UserService/Services/UserService.cs" Line="84" Column="1" />
-      <File FileName="UserService/Program.cs" />
-      <File FileName="AuthService/Program.cs" />
-      <File FileName="AuthService/appsettings.json" />
-      <File FileName="AuthService/appsettings.Development.json" />
-      <File FileName="AuthService/Services/AuthService.cs" />
-      <File FileName="AuthService/Protos/auth.proto" />
-      <File FileName="AuthService/Dockerfile" />
-      <File FileName="SneakerShop-Core/Controllers/UserController.cs" />
-      <File FileName="SneakerShop-Core/Models/UserLoginRequest.cs" />
-      <File FileName="UserService/Dockerfile" />
+      <File FileName="SneakerShop-Core/Program.cs" Line="23" Column="34" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SneakerShop-Core" expanded="True">
-            <Node name="AuthService" expanded="True">
-              <Node name="ConnectedServicesFolder" expanded="True" />
-              <Node name="Protos" expanded="True" />
-              <Node name="Services" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
-            </Node>
             <Node name="Gateway" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="Protos" expanded="True" />
-            </Node>
-            <Node name="UserService" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
-              <Node name="Protos" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="UserService.cs" selected="True" />
-              </Node>
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -48,10 +22,6 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.93627EE5-E700-4C8F-9174-50586EC39583" />
-  <MonoDevelop.Ide.ItemProperties.Gateway PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
 </Properties>

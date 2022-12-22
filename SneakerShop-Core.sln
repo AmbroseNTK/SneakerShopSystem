@@ -9,15 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserService", "UserService\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthService", "AuthService\AuthService.csproj", "{764B6830-2D86-4B92-8FED-C4120D389782}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductService", "ProductService\ProductService.csproj", "{95423153-AEC5-4DD1-8D17-030C39D7B51D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductService", "ProductService\ProductService.csproj", "{95423153-AEC5-4DD1-8D17-030C39D7B51D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderService", "OrderService\OrderService.csproj", "{C1DC1134-C1F5-42DF-BF40-8EEA7BB54B50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderService", "OrderService\OrderService.csproj", "{C1DC1134-C1F5-42DF-BF40-8EEA7BB54B50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockService", "StockService\StockService.csproj", "{06F877D1-468B-41E5-B226-117452177C00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockService", "StockService\StockService.csproj", "{06F877D1-468B-41E5-B226-117452177C00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShippingService", "ShippingService\ShippingService.csproj", "{63CA0065-5ED7-4F94-8B75-A34B2E213E0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShippingService", "ShippingService\ShippingService.csproj", "{63CA0065-5ED7-4F94-8B75-A34B2E213E0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceService", "InvoiceService\InvoiceService.csproj", "{F6878F2D-8AB5-4F65-A1E3-85CE37F44F00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceService", "InvoiceService\InvoiceService.csproj", "{F6878F2D-8AB5-4F65-A1E3-85CE37F44F00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
