@@ -8,10 +8,12 @@ namespace SneakerShop_Core.Controllers
     public class InvoiceController : Controller
     {
         private InvoiceService.Invoice.InvoiceClient _invoiceClient;
+        private OrderService.Order.OrderClient _orderClient;
 
-        public InvoiceController(InvoiceService.Invoice.InvoiceClient invoiceClient)
+        public InvoiceController(InvoiceService.Invoice.InvoiceClient invoiceClient, OrderService.Order.OrderClient orderClient)
         {
             this._invoiceClient = invoiceClient;
+            this._orderClient = orderClient;
         }
 
         [HttpPost]
@@ -46,5 +48,12 @@ namespace SneakerShop_Core.Controllers
             return result;
         }
 
+        [HttpGet("detail")]
+        public async Task<Models.InvoiceResponse> GetInvoiceDetails([FromQuery] long id)
+        {
+            var invoice = await _invoiceClient.GetInvoiceByIdAsync(new InvoiceService.GetInvoiceByIdRequest { Id = id });
+            var order = await _orderClient.GetOrderByIdAsync(new OrderService.GetOrderByIdRequest { Id = invoice.Data.Id });
+            return new Models.InvoiceResponse { CreateAt = invoice.Data.CreateAt, Id = invoice.Data.Id, OrderData = order.OrderData, OrderDetailData = order.OrderDetailData.ToList() };
+        }
     }
 }

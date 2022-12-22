@@ -7,10 +7,12 @@ namespace SneakerShop_Core.Controllers
     public class ProductController : ControllerBase
     {
         private ProductService.Product.ProductClient _productClient;
+        private StockService.Stock.StockClient _stockClient;
 
-        public ProductController(ProductService.Product.ProductClient productClient)
+        public ProductController(ProductService.Product.ProductClient productClient, StockService.Stock.StockClient stockClient)
         {
             _productClient = productClient;
+            _stockClient = stockClient;
         }
 
         [HttpPost]
@@ -48,6 +50,20 @@ namespace SneakerShop_Core.Controllers
         public async Task<ProductService.DeleteProductReply> DeleteProduct([FromQuery]long id)
         {
             return await _productClient.DeleteProductAsync(new ProductService.DeleteProductRequest { Id = id });
+        }
+
+        [HttpGet("detail")]
+        public async Task<Models.ProductResponse> GetALLProductDetail([FromQuery]long id)
+        {
+            var stocks = new List<StockService.StockData>();
+            var total = await _productClient.GetNumOfProductAsync(new ProductService.GetNumOfProductRequest { Message = "" });
+            var products = await _productClient.GetProductPaginateAsync(new ProductService.GetProductPaginateRequest { AfterID = 0, Limit = (int)total.Total }); 
+            foreach(var item in products.ProductList)
+            {
+                var stock = await _stockClient.GetStockByIdAsync(new StockService.GetStockByProdIdRequest { ProdID = item.Id });
+                stocks.Add(stock.Data);
+            }
+            return new Models.ProductResponse { stocks = stocks, products = products.ProductList.ToList() };
         }
     }
 }

@@ -8,10 +8,15 @@ namespace SneakerShop_Core.Controllers
     public class OrderController : ControllerBase
     {
         private OrderService.Order.OrderClient _orderClient;
+        private ProductService.Product.ProductClient _productClinet;
+        private UserService.User.UserClient _userClient;
 
-        public OrderController(OrderService.Order.OrderClient orderClient)
+
+        public OrderController(OrderService.Order.OrderClient orderClient, ProductService.Product.ProductClient productClient, UserService.User.UserClient userClient)
         {
             this._orderClient = orderClient;
+            this._productClinet = productClient;
+            this._userClient = userClient;
         }
 
         [HttpPost]
@@ -55,6 +60,25 @@ namespace SneakerShop_Core.Controllers
         {
             var result = await _orderClient.DeleteOrderAsync(new OrderService.DeleteOrderRequest { Id = id });
             return result;
+        }
+
+        [HttpGet("detail")]
+        public async Task<Models.OrderResponse> GetOrderDetail([FromQuery] long id)
+        {
+            var products = new List<ProductService.ProductData>();
+            var order = await _orderClient.GetOrderByIdAsync(new OrderService.GetOrderByIdRequest { Id = id });
+            var user = await _userClient.GetUserByIdAsync(new UserService.GetUserByIdRequest { Id = order.OrderData.UserID });
+            foreach(var item in order.OrderDetailData){
+                var product = await _productClinet.GetProductByIdAsync(new ProductService.GetProductByIdRequest { Id = item.Id });
+                products.Add(product.Data);
+            }
+            return new Models.OrderResponse {
+                CreatedAt = order.OrderData.CreatedAt,
+                Id = order.OrderData.Id,
+                Total = order.OrderData.Total,
+                User = user.Data, Products = products,
+                OrderDetails = order.OrderDetailData.ToList()
+            };
         }
     }
 }

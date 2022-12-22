@@ -54,7 +54,6 @@ message GetProductPaginateRequest {
 }
 
 message GetProductPaginateReply {
-
 	repeated ProductData productList = 1;
 }
 
